@@ -232,8 +232,8 @@ ul {
 
 .formats-list {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .formats-item {
@@ -261,6 +261,11 @@ ul {
 }
 
 /* footer link */
+.footer {
+  background-image: url(../images/footfon.png);
+  background-color: var(--color-primary-dark);
+}
+
 .address-link {
   color: var(--color-primary-light);
   font-size: 16px;
