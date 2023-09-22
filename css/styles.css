@@ -31,7 +31,8 @@
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
   --color-brand-dark: #465929;
-  --color-brand-light: #819b57;
+  --color-brand-normal: #819b57;
+  --color-brand-light: #cfcfbc;
 }
 
 /* Base */
@@ -86,7 +87,7 @@ ul {
 
 /* Header */
 .header {
-  background-color: lightgray;
+  background-color: lightgray; /*remove*/
 }
 
 .header-container {
@@ -122,8 +123,8 @@ ul {
 .button {
   padding: 16px 32px;
   color: var(--color-primary-light);
-  background-color: var(--color-brand-light);
-  border: 2px solid var(--color-brand-light);
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
@@ -141,7 +142,7 @@ ul {
   line-height: 1.5;
 }
 .link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 .hero-title {
@@ -157,13 +158,13 @@ ul {
   /* text-transform: uppercase; */
 }
 .hero-title .accent {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 /* advantages-section */
 
 .advantages-section {
-  background-color: var(--color-brand-light);
+  background-color: var(--color-brand-normal);
   padding: 16px 0;
 }
 
@@ -206,7 +207,7 @@ ul {
 }
 
 .traditions-text .brand {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
   font-weight: 600;
 }
 
@@ -225,7 +226,15 @@ ul {
 }
 
 .chefs-title {
+  max-width: 540px;
   margin-bottom: 80px;
+}
+.chefs-title::before,
+.chefs-title::after {
+  display: block;
+  content: '';
+  width: 352px;
+  border: 2px solid var(--color-brand-light);
 }
 
 /* format section */
@@ -242,8 +251,17 @@ ul {
 
 .format-card {
   padding: 24px;
+  height: 444px;
+  width: 349px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
   border: 1px solid lightgray; /*remove*/
   border-radius: 16px;
+  box-shadow: 2px 2px 4px 4px violet;
 }
 
 .formats-title {
@@ -264,6 +282,9 @@ ul {
 .footer {
   background-image: url(../images/footfon.png);
   background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .address-link {
@@ -274,7 +295,7 @@ ul {
 }
 
 .address-link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 .address-copyright {
