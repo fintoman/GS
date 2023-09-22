@@ -112,6 +112,9 @@ ul {
 /* hero-section */
 .hero-section {
   padding: 272px 0;
+  background-image: url(../images/hfon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button {
