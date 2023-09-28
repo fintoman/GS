@@ -288,6 +288,32 @@ ul {
   font-weight: 300;
 }
 
+/* Carousel */
+
+.carusel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+.carusel-arrow {
+  fill: var(--color-primary-dark);
+}
+
+.carusel-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.carusel-button:hover .carusel-arrow {
+  background-color: var(--color-primary-light);
+}
+
 /* footer link */
 .footer {
   background-image: url(../images/footfon.png);
@@ -306,6 +332,13 @@ ul {
 
 .address-link:hover {
   color: var(--color-brand-normal);
+}
+.address-social {
+  fill: var(--color-primary-light);
+}
+
+.address-social:hover {
+  fill: var(--color-brand-normal);
 }
 
 .address-copyright {
