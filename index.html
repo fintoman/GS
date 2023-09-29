@@ -170,14 +170,18 @@
           </div>
         </div>
       </section>
-      <section class="section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
-          <div class="contact-containet">
-            <h2 class="contact-title section-title">
-              Приєднуйся до мережі перкарень
-            </h2>
-            <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title section-title">
+                Приєднуйся до мережі перкарень
+              </h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <!-- form -->
+            </div>
             <iframe
+              class="contact-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638712576114!2d30.488658575713522!3d50.456673086916766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1693266345435!5m2!1sru!2sua"
               width="603"
               height="595"
@@ -192,60 +196,64 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="#">
-          <img src="./images/logo.svg" alt="Логотип сучаснох перканы" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Наші традиції</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats-section">Формати</a></li>
-            <li><a class="link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="address-link" href="tel:+380960000007"
-                >+ 38 (096) 000 00 07"
-              </a>
-            </li>
-            <li>
-              <a class="address-link" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <a class="footer-logo" href="#">
+              <img src="./images/logo.svg" alt="Логотип сучаснох перканы" />
+            </a>
+            <ul class="footer-menu">
+              <li>
+                <a class="link" href="#traditions-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats-section">Формати</a></li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07"
+                </a>
+              </li>
+              <li>
+                <a class="address-link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://goo.gl/maps/kGFEa3UcMa2xQgNw8"
+                  target="_blank"
+                >
+                  Україна, м. Київ,вул. Січових Стрільців 54
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-social" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-social" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a class="address-link" href="#" target="_blank"
+                >Політика конфіденційності</a
               >
-            </li>
-            <li>
-              <a
-                class="address-link"
-                href="https://goo.gl/maps/kGFEa3UcMa2xQgNw8"
-                target="_blank"
-              >
-                Україна, м. Київ,вул. Січових Стрільців 54
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-social" width="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-social" width="32" height="32">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a class="address-link" href="#" target="_blank"
-            >Політика конфіденційності</a
-          >
-          <p class="address-copyright">&copy; 2022 Дані захищені</p>
-        </address>
+              <p class="address-copyright">&copy; 2022 Дані захищені</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
   </body>

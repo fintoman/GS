@@ -332,6 +332,28 @@ ul {
 }
 
 /* footer link */
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-address,
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-menu,
+.footer-logo {
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
 .footer {
   background-image: url(../images/footfon.png);
   background-color: var(--color-primary-dark);
@@ -363,6 +385,22 @@ ul {
 }
 
 /* contacts-section */
+
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: none;
+}
+
 .contact-title {
   margin-bottom: 16px;
 }
