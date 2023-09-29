@@ -297,21 +297,18 @@ ul {
   width: 44px;
   height: 44px;
   padding: 0px;
+  fill: var(--color-primary-dark);
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid var(--color-primary-dark);
   cursor: pointer;
 }
-.carusel-arrow {
-  fill: var(--color-primary-dark);
-}
-
 .carusel-button:hover {
   background-color: var(--color-primary-dark);
-}
-
-.carusel-button:hover .carusel-arrow {
-  background-color: var(--color-primary-light);
+  fill: #011f4a;
+  stroke: #fff;
+  transition: background-color 0.2s ease;
+  fill: var(--color-primary-light);
 }
 
 /* footer link */
