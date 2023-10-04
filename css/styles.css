@@ -95,7 +95,12 @@ a {
 
 /* Header */
 .header {
-  background-color: lightgray; /*remove*/
+  /* background-color: lightgray; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
 }
 
 .header-container {
@@ -148,6 +153,7 @@ a {
   color: var(--color-primary-light);
   text-decoration: none;
   line-height: 1.5;
+  transition: color 0.3s;
 }
 .link:hover {
   color: var(--color-brand-normal);
@@ -322,6 +328,11 @@ a {
   border: 1px solid lightgray; /*remove*/
   border-radius: 16px;
   box-shadow: 2px 2px 4px 4px violet;
+  transition: transform 2s;
+}
+
+.format-card:hover {
+  transform: scale(1.2);
 }
 
 .formats-title {
@@ -360,6 +371,10 @@ a {
   stroke: #fff;
   transition: background-color 0.2s ease;
   fill: var(--color-primary-light);
+}
+
+.carusel-button.next {
+  transform: rotate(180deg);
 }
 
 /* footer link */
@@ -468,11 +483,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 40px;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 .modal {
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  max-width: 880px;
+  max-height: 880px;
+  height: 100%;
   background-color: var(--color-primary-light);
   border-radius: 30px;
   position: relative;
