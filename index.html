@@ -312,12 +312,12 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ім'я</label
@@ -328,6 +328,9 @@
               id="user-name"
               name="user-name"
               placeholder="Ім'я"
+              minlength="2"
+              maxlength="20"
+              required
             />
           </div>
 
@@ -340,7 +343,9 @@
               type="tel"
               id="user-tel"
               name="user-tel"
+              pattern="^\+[0-9]{12}"
               placeholder="Телефон"
+              required
             />
           </div>
 
@@ -354,8 +359,21 @@
               id="user-email"
               name="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
+
+          <!-- <div class="checkbox">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="terms-conditions"
+              id="terms-conditions"
+            />
+            <label class="checkbox-label" for="terms-conditions">
+              Я точно погоджуюсь з політикою конфіденційності
+            </label>
+          </div> -->
           <button class="button form-button" type="submit">
             Замовити дзвінок
           </button>
