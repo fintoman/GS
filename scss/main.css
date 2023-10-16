@@ -1,30 +1,30 @@
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
 }
 :root {
   --color-primary-dark: #31261a;
@@ -45,7 +45,7 @@
 body {
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400px;
   line-height: 1.5;
@@ -96,7 +96,6 @@ a {
 
 /* Header */
 .header {
-  /* background-color: lightgray; */
   position: absolute;
   top: 0;
   left: 0;
@@ -126,13 +125,7 @@ a {
 /* hero-section */
 .hero-section {
   padding: 272px 0;
-  background-image: linear-gradient(
-      103deg,
-      rgba(18, 18, 17, 0.78) 2.03%,
-      rgba(18, 18, 17, 0.6) 58.46%,
-      rgba(18, 18, 17, 0) 90.36%
-    ),
-    url(../images/hfon.jpg);
+  background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(../images/hfon.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -150,11 +143,11 @@ a {
 }
 
 /* .button:disabled {
-    color: gray;
-    background-color: lightgray;
-    border-color: currentColor;
-    cursor: not-allowed;
-  } */
+  color: gray;
+  background-color: lightgray;
+  border-color: currentColor;
+  cursor: not-allowed;
+} */
 .button:hover {
   color: var(--color-brand-dark);
   background-color: transparent;
@@ -273,8 +266,7 @@ a {
 
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light),
-    -16px 16px 0 2px var(--color-secondary-dark);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 .chefs-title {
@@ -287,7 +279,7 @@ a {
 .chefs-title::before,
 .chefs-title::after {
   display: block;
-  content: '';
+  content: "";
   width: 360px;
   border: 2px solid var(--color-brand-light);
   bottom: 24px;
@@ -338,12 +330,7 @@ a {
   padding: 24px;
   height: 444px;
   width: 349px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55.21%,
-    rgba(49, 38, 26, 0.71) 72.92%,
-    var(--color-primary-dark) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
   border: 1px solid lightgray; /*remove*/
   border-radius: 16px;
   box-shadow: 2px 2px 4px 4px violet;
@@ -460,13 +447,13 @@ a {
   background-repeat: no-repeat;
   bottom: 0px;
   background-image: url(../images/bread.png);
-  content: '';
+  content: "";
 }
 
 .footer::after {
   position: absolute;
   background-image: url(../images/bread2.png);
-  content: '';
+  content: "";
   background-repeat: no-repeat;
   bottom: 0px;
   width: 380px;
@@ -596,28 +583,28 @@ a {
 }
 
 /* .checkbox {
-    position: relative;
-  }
+  position: relative;
+}
 
-  .checkbox-input {
-    appearance: none;
-  }
+.checkbox-input {
+  appearance: none;
+}
 
-  .checkbox-input:checked + .checkbox-label::before {
-    background-color: green;
-  }
-  .checkbox-label {
-    padding: 24px;
-  }
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: green;
+}
+.checkbox-label {
+  padding: 24px;
+}
 
-  .checkbox-label::before {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border: 1px solid var(--color-primary-dark);
-    content: '';
-    left: 0;
-    top: 0;
-    margin-top: 5px;
-    border-radius: 2px;
-  } */ /*# sourceMappingURL=main.css.map */
+.checkbox-label::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-primary-dark);
+  content: '';
+  left: 0;
+  top: 0;
+  margin-top: 5px;
+  border-radius: 2px;
+} *//*# sourceMappingURL=main.css.map */
