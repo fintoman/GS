@@ -10,21 +10,12 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-attachment: fixed;
-}
 
-.hero-title {
-  color: var(--color-primary-light);
-  text-align: center;
-  font-size: 128px;
-  font-weight: 900;
-  margin-bottom: 0;
-  /* word-spacing: 4px; */
-  /* letter-spacing: 4px; */
-  /* text-shadow: 2px 2px 4px violet; */
-
-  /* text-transform: uppercase; */
-}
-.hero-title .accent {
-  color: var(--color-brand-normal);
+  &__title {
+    color: var(--color-primary-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
 }
