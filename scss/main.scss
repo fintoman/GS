@@ -1,7 +1,7 @@
 @import './utils/fonts';
 @import './utils/variables';
 @import './utils/_utils.scss';
-@import './utils/forms';
+@import './utils/form-terms';
 @import './utils/carusel';
 @import './utils/format-card.scss';
 @import './utils/texts.scss';
@@ -19,6 +19,7 @@
 @import './components/hero-section';
 @import './components/chefs';
 @import './components/chef-card';
+@import './components/input';
 
 @import './components/advantages';
 @import './components/footer';

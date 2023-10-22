@@ -197,7 +197,7 @@
                     alt="Walrus format"
                   />
                   <h3 class="format-card__title" lang="en">Handlebar</h3>
-                  <div class="ormat-card__text">
+                  <div class="format-card__text">
                     <p>Площа: до 15 м2</p>
                     <p>Меню: найпопулярніші позиції меню</p>
                     <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
@@ -353,16 +353,18 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal__btn-close modal-btn-close" type="button">
+          Close
+        </button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="modal-form" autocomplete="off">
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-name"
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name"
               >Ім'я</label
             >
             <input
-              class="form-input"
+              class="input__control"
               type="text"
               id="user-name"
               name="user-name"
@@ -373,12 +375,12 @@
             />
           </div>
 
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-tel"
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-tel"
               >Телефон</label
             >
             <input
-              class="form-input"
+              class="input__control"
               type="tel"
               id="user-tel"
               name="user-tel"
@@ -388,12 +390,12 @@
             />
           </div>
 
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-email"
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email"
               >Електронна пошта</label
             >
             <input
-              class="form-input"
+              class="input__control"
               type="email"
               id="user-email"
               name="user-email"
@@ -402,24 +404,15 @@
             />
           </div>
 
-          <!-- <div class="checkbox">
-            <input
-              class="checkbox-input visually-hidden"
-              type="checkbox"
-              name="terms-conditions"
-              id="terms-conditions"
-            />
-            <label class="checkbox-label" for="terms-conditions">
-              Я точно погоджуюсь з політикою конфіденційності
-            </label>
-          </div> -->
-          <button class="button form-button" type="submit">
+          <button class="button modal__button" type="submit">
             Замовити дзвінок
           </button>
 
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь
-            <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+            <a class="form-terms__link" href="#"
+              >з політикою конфіденційності</a
+            >
           </p>
         </form>
       </div>
