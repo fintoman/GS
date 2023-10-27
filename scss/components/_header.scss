@@ -19,7 +19,7 @@
   &__menu {
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       display: flex;
       gap: 64px;
       flex-grow: 1;
@@ -28,12 +28,18 @@
   }
   &__button {
     display: none;
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       display: block;
     }
   }
   &__burger {
-    @media screen and (min-width: $bp-tablet) {
+    background: transparent;
+    padding: 0px;
+    border: none;
+    height: 24px;
+    width: 24px;
+    fill: var(--color-primary-light);
+    @media screen and (min-width: $bp-desktop) {
       display: none;
     }
   }
