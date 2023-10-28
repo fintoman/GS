@@ -3,7 +3,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 12px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 32px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
