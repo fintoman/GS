@@ -15,9 +15,10 @@
   border-radius: 16px;
   box-shadow: 2px 2px 4px 4px black;
   transition: transform 2s;
+  overflow: hidden;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 
   &__image {
