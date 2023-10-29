@@ -6,68 +6,66 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
-.footer-address,
-.footer-nav {
-  display: flex;
-  flex-basis: 50%;
-  gap: 20px;
-}
+  &::before {
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    background-image: url(../images/bread.png);
+    content: '';
+  }
 
-.footer-menu,
-.footer-logo {
-  flex-grow: 1;
-  gap: 20px;
-}
+  &::after {
+    position: absolute;
+    background-image: url(../images/bread2.png);
+    content: '';
+    background-repeat: no-repeat;
+    bottom: 0px;
+    width: 380px;
+    height: 190px;
+    right: 0;
+  }
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+  &__address,
+  &__nav {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+  }
 
-.address-list,
-.address-info {
-  flex-grow: 1;
-}
+  &__menu,
+  &__logo {
+    flex-grow: 1;
+    gap: 20px;
+  }
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
 
-.address-link {
-  color: var(--color-primary-light);
-  font-size: 16px;
-  font-weight: 300;
-  text-decoration: none;
-}
+  &__address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+  }
 
-.address-link:hover {
-  color: var(--color-brand-normal);
-}
-.address-social {
-  fill: var(--color-primary-light);
-}
+  &__address-link:hover {
+    color: var(--color-brand-normal);
+  }
+  &__address-social {
+    fill: var(--color-primary-light);
+  }
 
-.address-social:hover {
-  fill: var(--color-brand-normal);
-}
+  &__address-social:hover {
+    fill: var(--color-brand-normal);
+  }
 
-.address-copyright {
-  font-size: 14px;
-}
-
-.footer::before {
-  position: absolute;
-  width: 180px;
-  height: 120px;
-  background-repeat: no-repeat;
-  bottom: 0px;
-  background-image: url(../images/bread.png);
-  content: '';
-}
-
-.footer::after {
-  position: absolute;
-  background-image: url(../images/bread2.png);
-  content: '';
-  background-repeat: no-repeat;
-  bottom: 0px;
-  width: 380px;
-  height: 190px;
-  right: 0;
+  &__address-copyright {
+    font-size: 14px;
+  }
 }
