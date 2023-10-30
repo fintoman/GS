@@ -8,8 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 40px;
   transition: opacity 0.5s, visibility 0.5s;
+  padding: 20px;
 
   &.is-hidden {
     opacity: 0;
@@ -26,8 +26,12 @@
   background-color: var(--color-primary-light);
   border-radius: 30px;
   position: relative;
-  padding: 128px;
+  padding: 48px;
   overflow-y: auto;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 128px;
+  }
 
   &__btn-close {
     position: absolute;
